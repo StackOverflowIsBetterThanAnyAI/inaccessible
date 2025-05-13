@@ -4,6 +4,42 @@ description: A collection of bad examples for situations applicable to WCAG SC 1
 layout: default
 ---
 
+{% block styles %}
+<style>
+  .css-image {
+    display: block;
+    width: 21.6875rem; /* 347px */
+    height: 28.8125rem; /* 461px */
+    background: url('/images/angry-cat-bunny.jpg') no-repeat center / 100%;
+  }
+</style>
+{% endblock %}
+
 <h1>1.1.1 Non-text Content - Level A: Bad</h1>
 
-<!-- TODO: add examples -->
+<h2>Images</h2>
+
+<h3>No alt text</h3>
+
+<img src="/images/angry-cat-bunny.jpg" width="347" height="461">
+
+<h3>Unhelpful alt text</h3>
+
+<div class="cluster">
+  <img src="/images/angry-cat-bunny.jpg" alt="angry-cat-bunny.jpg" width="347" height="461">
+  <img src="/images/angry-cat-bunny.jpg" alt="image of a cat" width="347" height="461">
+  <img src="/images/angry-cat-bunny.jpg" alt="picture of a cat" width="347" height="461">
+  <img src="/images/angry-cat-bunny.jpg" alt="photo of a cat" width="347" height="461">
+</div>
+
+<h3>Non-decorative image loaded through CSS</h3>
+
+<div class="css-image"></div>
+
+<h2>Image maps</h2>
+
+<h2>Video</h2>
+
+<h2>Audio</h2>
+
+<h2>Charts</h2>

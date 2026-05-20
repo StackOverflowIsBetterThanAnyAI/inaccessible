@@ -11,18 +11,18 @@ jobs:
         uses: StackOverflowIsBetterThanAnyAI/full-accessibility-audit/.github/workflows/full-accessibility-audit.yml@master
         with:
             app_port: "8080"
-            start_command: "npx @11ty/eleventy --serve --port=8080 --host=0.0.0.0"
+            start_command: "ELEVENTY_SERVER_HOST=0.0.0.0 npx @11ty/eleventy --serve --port=8080"
 
     full-accessibility-audit-axe:
         name: Full Accessibility Audit Axe
         uses: StackOverflowIsBetterThanAnyAI/full-accessibility-audit/.github/workflows/full-accessibility-audit.yml@axe
         with:
             app_port: "8080"
-            start_command: "npx @11ty/eleventy --serve --port=8080 --host=0.0.0.0"
+            start_command: "ELEVENTY_SERVER_HOST=0.0.0.0 npx @11ty/eleventy --serve --port=8080"
 
     full-accessibility-audit-alfa:
         name: Full Accessibility Audit Alfa
         uses: StackOverflowIsBetterThanAnyAI/full-accessibility-audit/.github/workflows/full-accessibility-audit.yml@alfa
         with:
             app_port: "8080"
-            start_command: "npx @11ty/eleventy --serve --port=8080 --host=0.0.0.0"
+            start_command: "ELEVENTY_SERVER_HOST=0.0.0.0 npx @11ty/eleventy --serve --port=8080"

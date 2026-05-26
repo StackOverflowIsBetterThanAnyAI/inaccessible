@@ -1,29 +1,29 @@
 {
-  "name": "inaccessible",
-  "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
-  "author": "Dustin Whisman",
-  "license": "ISC",
-  "engines": {
-    "node": ">=20"
-  },
-  "type": "module",
-  "scripts": {
-    "start": "rm -rf dist && eleventy --serve --incremental",
-    "build": "rm -rf dist && eleventy",
-    "lint": "npm run lint:css && npm run lint:js",
-    "lint:css": "stylelint \"src/**/*.{css,scss,sass}\" --color --formatter verbose",
-    "lint:js": "eslint",
-    "test": "echo \"TODO: add support for testing\" && exit 0"
-  },
-  "devDependencies": {
-    "@11ty/eleventy": "^3.0.0",
-    "@eslint/js": "^9.25.1",
-    "dotenv": "^16.5.0",
-    "eslint": "^9.25.1",
-    "globals": "^16.0.0",
-    "stylelint": "^16.19.1",
-    "stylelint-config-standard": "^38.0.0"
-  }
+    "name": "inaccessible",
+    "version": "0.1.0",
+    "description": "",
+    "main": "index.js",
+    "author": "Dustin Whisman",
+    "license": "ISC",
+    "engines": {
+        "node": ">=20"
+    },
+    "type": "module",
+    "scripts": {
+        "start": "eleventy --serve --incremental",
+        "build": "rm -rf dist && eleventy",
+        "lint": "npm run lint:css && npm run lint:js",
+        "lint:css": "stylelint \"src/**/*.{css,scss,sass}\" --color --formatter verbose",
+        "lint:js": "eslint",
+        "test": "echo \"TODO: add support for testing\" && exit 0"
+    },
+    "devDependencies": {
+        "@11ty/eleventy": "^3.0.0",
+        "@eslint/js": "^9.25.1",
+        "dotenv": "^16.5.0",
+        "eslint": "^9.25.1",
+        "globals": "^16.0.0",
+        "stylelint": "^16.19.1",
+        "stylelint-config-standard": "^38.0.0"
+    }
 }
